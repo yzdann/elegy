@@ -1,0 +1,65 @@
+/* Contain demo size */
+* {
+  text-align: center;
+  background-color: #1a1a1b;
+}
+
+
+.container {
+  padding-top: 5px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote {
+  color: #d7dadc;
+  border-style: solid;
+  border-color: #343536;
+  margin: 0;
+  font-size: 16px;
+  padding: 10px 2px 10px 2px;
+}
+
+.quote > p {
+  margin: 2px;
+}
+
+.by {
+  color: #7a8384;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.track {
+  color: #7a8384;
+  font-size: 14px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
+.time {
+  color: #0079d3;
+  font-size: 11px;
+}
+
+.pagination {
+  padding-top: 10px;
+  color: #d7dadc;
+}
+
+.pagination > a {
+  color: #d7dadc;
+}
+
+.pagination > a:visited {
+  color:#d7dadc;
+}
+
+/* Reset */
+blockquote {
+  padding: 0;
+  margin: 0;
+}

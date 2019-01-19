@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{%- if site.posts.size > 0 -%}
+    {%- for post in paginator.posts -%}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <div class="container">
+          <div class="quote">
+              {{ post.content }}
+            <div class="by">
+              {{ post.by }}
+            </div>
+            <div class="track">
+              {{ post.track }}
+            </div>
+            <div class="time">
+              {{ post.date | date: date_format }}
+            </div>
+          </div>
+        </div>
+    {%- endfor -%}
+{%- endif -%}
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">
+      &#60; Prev
+    </a>
+  {% else %}
+    <span>&#60; Prev</span>
+  {% endif %}
+
+	<span>&#45;</span>
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">
+      Next &#62;
+    </a>
+  {% else %}
+    <span>Next&#62;</span>
+  {% endif %}
+</div>
+{% endif %}
+
